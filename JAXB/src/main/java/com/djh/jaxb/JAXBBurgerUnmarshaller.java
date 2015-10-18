@@ -1,9 +1,10 @@
 package com.djh.jaxb;
 
 
-import com.djh.xml.domain.Burger;
+import generated.Burger;
 
 import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBElement;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 import java.io.InputStream;
@@ -18,7 +19,7 @@ public class JAXBBurgerUnmarshaller {
 
     public JAXBBurgerUnmarshaller() {
         try {
-            JAXBContext jaxbContext = JAXBContext.newInstance(Burger.class);
+            JAXBContext jaxbContext = JAXBContext.newInstance("generated");
             unmarshaller = jaxbContext.createUnmarshaller();
         } catch (JAXBException e) {
             e.printStackTrace();
@@ -29,7 +30,7 @@ public class JAXBBurgerUnmarshaller {
 
         Burger burger = null;
         try {
-            burger = (Burger) unmarshaller.unmarshal(xml);
+            burger = (Burger) ((JAXBElement) unmarshaller.unmarshal(xml)).getValue();
         } catch (JAXBException e) {
             e.printStackTrace();
         }

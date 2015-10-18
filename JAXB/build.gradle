@@ -11,16 +11,19 @@ version = '1.0'
 
 repositories {
     mavenCentral()
-    jCenter();
 }
 
 
 dependencies {
     compile project(':DomainModel')
     testCompile group: 'junit', name: 'junit', version: '4.11'
+
+    jaxb 'com.sun.xml.bind:jaxb-xjc:2.2.7-b41'
+    jaxb 'com.sun.xml.bind:jaxb-impl:2.2.7-b41'
+    jaxb 'javax.xml.bind:jaxb-api:2.2.7'
 }
 
 
 jaxb {
-    xsdDir = "xml"
+    xsdDir = "DomainModel/src/main/resources/xml"
 }

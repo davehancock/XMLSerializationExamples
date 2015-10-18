@@ -1,6 +1,6 @@
 package com.djh.jaxb;
 
-import com.djh.xml.domain.Burger;
+import generated.Burger;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -16,7 +16,7 @@ public class JAXBBurgerUnmarshallerTest {
     @Test
     public void testUnmarshaller() {
 
-        InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream("BurgerSample.xml");
+        InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream("xml/BurgerSample.xml");
 
         Burger burger = jaxbBurgerUnmarshaller.unmarshalBurger(inputStream);
         Assert.assertNotNull(burger);
