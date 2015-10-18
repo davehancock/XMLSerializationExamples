@@ -1,15 +1,26 @@
+
+plugins {
+    id 'com.github.jacobono.jaxb' version '1.3.5'
+}
+
 apply plugin: 'java'
+
 
 sourceCompatibility = 1.8
 version = '1.0'
 
 repositories {
     mavenCentral()
-    mavenLocal();
+    jCenter();
 }
 
 
 dependencies {
     compile project(':DomainModel')
     testCompile group: 'junit', name: 'junit', version: '4.11'
+}
+
+
+jaxb {
+    xsdDir = "xml"
 }
