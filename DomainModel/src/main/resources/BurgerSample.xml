@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<burger>
+    <meatWeight>20</meatWeight>
+    <meatType>Boar</meatType>
+    <sauce>
+        <volume>100</volume>
+        <ingredients>
+            <ingredient>mustard</ingredient>
+            <ingredient>salt</ingredient>
+            <ingredient>sugar</ingredient>
+        </ingredients>
+    </sauce>
+    <withBread>true</withBread>
+</burger>

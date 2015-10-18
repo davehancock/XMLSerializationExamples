@@ -1,0 +1,4 @@
+include 'DomainModel','JAXB','JIXB','MOXy','XStream'
+
+rootProject.name = 'XMLSerializationExamples'
+

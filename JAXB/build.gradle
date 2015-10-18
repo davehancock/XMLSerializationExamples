@@ -1,0 +1,15 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+version = '1.0'
+
+repositories {
+    mavenCentral()
+    mavenLocal();
+}
+
+
+dependencies {
+    compile project(':DomainModel')
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
