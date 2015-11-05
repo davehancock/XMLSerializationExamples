@@ -9,9 +9,7 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 import java.io.InputStream;
 
-/**
- * @author David Hancock
- */
+
 public class JAXBBurgerUnmarshaller {
 
 

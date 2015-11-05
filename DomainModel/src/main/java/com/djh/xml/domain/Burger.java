@@ -1,8 +1,6 @@
 package com.djh.xml.domain;
 
-/**
- * @author David Hancock
- */
+
 public class Burger {
 
     private MeatType meatType;

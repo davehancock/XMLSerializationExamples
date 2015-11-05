@@ -3,9 +3,7 @@ package com.djh.xml.domain;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author David Hancock
- */
+
 public class Sauce {
 
     private int volume;

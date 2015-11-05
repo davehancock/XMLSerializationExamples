@@ -6,9 +6,7 @@ import org.junit.Test;
 
 import java.io.InputStream;
 
-/**
- * @author David Hancock
- */
+
 public class JAXBBurgerUnmarshallerTest {
 
     private JAXBBurgerUnmarshaller jaxbBurgerUnmarshaller = new JAXBBurgerUnmarshaller();
